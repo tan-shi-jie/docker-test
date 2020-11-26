@@ -10,6 +10,8 @@ WORKDIR /docker-test
 
 EXPOSE 8080
 
+RUN pwd
+
 ADD  ./docker-test-2.3.0.jar app.jar
 
 RUN sleep 6;
