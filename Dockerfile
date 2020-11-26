@@ -12,9 +12,9 @@ EXPOSE 8080
 
 ADD  . /docker-test-2.3.0.jar
 
-RUN sleep 60;
+RUN sleep 6;
 
-CMD ["java", "-Djava.security.egd=file:/dev/./urandom" ,"-jar" ,"docker-test-2.3.0.jar"]
+CMD ["java", "-Djava.security.egd=file:/dev/./urandom" ,"-jar" ,"target/docker-test-2.3.0.jar"]
 #CMD ["java", "-jar", "/target/docker-test-2.3.0.jar"]
 
 
