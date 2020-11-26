@@ -10,7 +10,7 @@ WORKDIR /docker-test
 
 EXPOSE 8080
 
-ADD  target/docker-test-2.3.0.jar app.jar
+ADD  docker-test-2.3.0.jar app.jar
 
 RUN sleep 6;
 
