@@ -17,6 +17,6 @@ RUN pwd
 RUN sleep 6;
 
 #CMD ["java", "-Djava.security.egd=file:/dev/./urandom" ,"-jar" ,"app.jar"]
-CMD ["sh","-c","java", "-jar", "app.jar"]
+CMD ["java", "-jar", "app.jar"]
 
 
