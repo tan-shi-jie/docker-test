@@ -1,5 +1,5 @@
 server:
-  port: 7001
+  port: 8071
 spring:
   profiles:
     active: dev
@@ -8,7 +8,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: 106.14.14.62:8848
 feign:
   sentinel:
     enabled: true
