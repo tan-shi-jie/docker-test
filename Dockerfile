@@ -10,9 +10,11 @@ WORKDIR /docker-test
 
 EXPOSE 8080
 
-ADD . /target/docker-test-2.3.0.jar
+ADD ./target/docker-test-2.3.0.jar docker-test-2.3.0.jar
 
-#CMD sleep 60;java -Djava.security.egd=file:/dev/./urandom -jar docker-test-2.3.0.jar
-CMD ["java", "-jar", "/target/docker-test-2.3.0.jar"]
+RUN sleep 60;
+
+CMD ["java", "-Djava.security.egd=file:/dev/./urandom" ,"-jar" ,"docker-test-2.3.0.jar"]
+#CMD ["java", "-jar", "/target/docker-test-2.3.0.jar"]
 
 
