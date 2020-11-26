@@ -1,6 +1,9 @@
 server:
+  port: 8080
   tomcat:
     max-swallow-size: -1
+  servlet:
+    context-path: /docker-test
   compression:
     enabled: true
     min-response-size: 1024

@@ -7,7 +7,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import java.net.UnknownHostException;
 
 @SpringBootApplication
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 public class JeecgDemoApplication {
 
     public static void main(String[] args) throws UnknownHostException {

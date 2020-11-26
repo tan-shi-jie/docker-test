@@ -57,12 +57,12 @@
 			<version>2.1.0.RELEASE</version>
 		</dependency>
 		<!--如果走配置中心需要添加此依赖-->
-		<dependency>
+<!--		<dependency>
 			<groupId>com.alibaba.cloud</groupId>
 			<artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
 			<version>2.1.0.RELEASE</version>
 
-		</dependency>
+		</dependency>-->
 
 		<!-- 服务降级 -->
 		<dependency>
