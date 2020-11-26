@@ -11,7 +11,7 @@ import java.net.UnknownHostException;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class JeecgDemoApplication {
+public class JeecgDockerApplication {
 
     @Bean
     @LoadBalanced
@@ -22,6 +22,6 @@ public class JeecgDemoApplication {
     public static void main(String[] args) throws UnknownHostException {
 
 
-        SpringApplication.run(JeecgDemoApplication.class, args);
+        SpringApplication.run(JeecgDockerApplication.class, args);
     }
 }

@@ -1,14 +1,5 @@
-server:
-  port: 8071
 spring:
   profiles:
     active: dev
   application:
-    name: docker-test
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 106.14.14.62:8848
-feign:
-  sentinel:
-    enabled: true
+    name: docker-tesst
