@@ -8,11 +8,7 @@ RUN mkdir -p /docker-test
 
 WORKDIR /docker-test
 
-#VOLUME /var/lib/jenkins/workspace/temp
-
 EXPOSE 8080
-
-RUN pwd
 
 ADD  ./target/docker-test-2.3.0.jar docker-test-2.3.0.jar
 

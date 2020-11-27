@@ -1,10 +1,8 @@
 package org.jeecg.modules.api.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -17,9 +15,12 @@ import java.io.IOException;
 @RequestMapping("/sys/api")
 public class SystemAPIController {
 
+//
+//    @Autowired
+//    private RestTemplate restTemplate;
 
-    @Autowired
-    private RestTemplate restTemplate;
+//    @Autowired
+//    private DockerApi dockerApi;
 
     /**
      * 发送系统消息
@@ -29,14 +30,14 @@ public class SystemAPIController {
 
         System.out.println("HellWorld!");
 
+//        String result = dockerApi.sendSysAnnouncement();
+
 //        String result = restTemplate.getForObject("http://docker-test/docker-test/sys/api/",String.class);
 //
-//        System.out.println("测试："+result);
+//        System.out.println("测试：" + result);
 //        return null;
         return "HellWorld!";
     }
-
-
 
 
 }
