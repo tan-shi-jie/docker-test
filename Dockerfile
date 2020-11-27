@@ -8,7 +8,7 @@ RUN mkdir -p /docker-test
 
 WORKDIR /docker-test
 
-VOLUME /var/lib/jenkins/workspace/temp
+#VOLUME /var/lib/jenkins/workspace/temp
 
 EXPOSE 8080
 
