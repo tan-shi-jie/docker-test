@@ -1,8 +1,11 @@
 package org.jeecg.modules.api.controller;
 
+//import org.jeecg.modules.api.feignclient.DockerApi;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -16,8 +19,8 @@ import java.io.IOException;
 public class SystemAPIController {
 
 //
-//    @Autowired
-//    private RestTemplate restTemplate;
+    @Autowired
+    private RestTemplate restTemplate;
 
 //    @Autowired
 //    private DockerApi dockerApi;
